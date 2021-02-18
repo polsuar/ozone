@@ -1,4 +1,0 @@
-
-class AqiController < ActionController
-  
-end
