@@ -1,0 +1,105 @@
+<%= stylesheet_link_tag "aqi" %>
+<div class="span-24">
+                    <div class="span-20 last serviceOverview">
+    <a name="aqi"></a>
+    <h2 class="sectionTitle">Air Quality Index (AQI)</h2>
+    <div class="sectionBody">
+        <p>
+            The EPA developed the AQI, which reports levels of ozone, particle pollution, and 
+            other common air pollutants on the same scale. An AQI reading of 101 corresponds to a level  
+            above the national air quality standard - the higher the AQI rating, the greater the health impact.
+        </p>
+    </div>
+</div>
+<div class="span-20 last serviceOverview">
+    <a name="aqiColors"></a>
+    <h2 class="sectionTitle">AQI colors</h2>
+    <div class="sectionBody">
+        <p>
+            The AQI is divided into color-coded categories and each category is identified by a simple informative 
+            descriptor. The descriptors are intended to convey information to the public about how air quality  
+            relates to public health. The table below defines the AQI categories.
+            <br>
+        </p>
+        <table class="aqiTable" style="width:600px">
+            <tbody><tr>
+                <th>AQI Numbers</th>
+                <th>AQI Category (Descriptor)</th>
+                <th>AQI Color</th>
+                <th>&nbsp;&nbsp;Hexadecimal Color Value</th>
+                <th>Category Number</th>
+            </tr>
+            <tr>
+                <td>0 - 50</td>
+                <td>Good</td>
+                <td class="aqi_green">Green</td>
+                <td>&nbsp;&nbsp;(00e400)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>51 - 100</td>
+                <td>Moderate</td>
+                <td class="aqi_yellow">Yellow</td>
+                <td>&nbsp;&nbsp;(ffff00)</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>101 - 150</td>
+                <td>Unhealthy for Sensitive Groups</td>
+                <td class="aqi_orange">Orange</td>
+                <td>&nbsp;&nbsp;(ff7e00)</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>151 - 200</td>
+                <td>Unhealthy</td>
+                <td class="aqi_red">Red</td>
+                <td>&nbsp;&nbsp;(ff0000)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>201 - 300</td>
+                <td>Very Unhealthy</td>
+                <td class="aqi_purple">Purple</td>
+                <td>&nbsp;&nbsp;(8f3f97)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>301 - 500</td>
+                <td>Hazardous</td>
+                <td class="aqi_maroon">Maroon</td>
+                <td>&nbsp;&nbsp;(7e0023)</td>
+                <td>6</td>
+            </tr>
+        </tbody></table>        
+    </div>
+</div>
+<div class="span-20 last serviceOverview">
+    <a name="aqObs"></a>
+    <h2 class="sectionTitle">Air quality observations</h2>
+    <div class="sectionBody">
+        <p>
+        Hourly or daily observations are measured and reported to AirNow by federal, 
+        state, local, and tribal air quality agencies.  Historical (daily) AQI values 
+        are calculated using an averaging method, and real-time 
+        AQI values are based on a surrogate calculation.
+        </p>
+        
+        <h3 class="subSectionTitle" style="padding-top:10px">Data averaging</h3>
+        <a name="dataAveraging"></a>
+        The AQI reported for ground-level ozone and fine particles (PM<sub>2.5</sub>) is based on an 
+        average of hourly data.  For ozone, the AQI is based on the maximum observed 8-hour 
+        average from midnight to midnight.  For PM<sub>2.5</sub>, the AQI is simply the 24-hour average.  
+        For AQI values reported in real-time, before a full day's data are available, the 
+        AQI is based on a surrogate calculation.
+        <br>
+        <h3 class="subSectionTitle">Surrogate values</h3>
+        <a name="surrogate"></a>
+        Real-time observations are reported using a surrogate AQI value or NowCast.  
+        More information about the surrogate calculations can be found at 
+        <a href="https://airnow.zendesk.com/hc/en-us/articles/212303177-How-does-AirNow-make-the-Current-PM-Air-Quality-Index-AQI-maps-" target="_blank">https://airnow.zendesk.com/hc/en-us/articles/212303177-How-does-AirNow-make-the-Current-PM-Air-Quality-Index-AQI-maps-</a> 
+        for PM2.5 and <a href="https://airnow.zendesk.com/hc/en-us/articles/212303237-How-are-your-ozone-maps-calculated-" target="_blank">https://airnow.zendesk.com/hc/en-us/articles/212303237-How-are-your-ozone-maps-calculated-</a> for ozone.
+
+    </div>
+</div>
+
